@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\AntiTenProtect.c">
+      <Filter>AntiTenProtect</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AntiTenProtect.h">
+      <Filter>AntiTenProtect</Filter>
+    </ClCompile>
+    <ClCompile Include="Ntos.c">
+      <Filter>Ntos</Filter>
+    </ClCompile>
+    <ClCompile Include="ldasm.c">
+      <Filter>ldasm</Filter>
+    </ClCompile>
+    <ClCompile Include="KernelReload.c">
+      <Filter>KernelReload</Filter>
+    </ClCompile>
+    <ClCompile Include="Fixrelocation.c">
+      <Filter>Fixrelocation</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.c">
+      <Filter>Filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunc.c">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsVersion.c">
+      <Filter>WindosVersion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AntiTenProtect">
+      <UniqueIdentifier>{d8bf5dfe-e274-4e0d-9244-a718f6581646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ntos">
+      <UniqueIdentifier>{1f91d96f-a52d-492f-abe7-60b030cb4b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ldasm">
+      <UniqueIdentifier>{e682742a-419f-4f43-bea5-d4a27827f3d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KernelReload">
+      <UniqueIdentifier>{09965207-5a4f-4384-981c-8cff7ff620e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fixrelocation">
+      <UniqueIdentifier>{11e7be7c-a3a8-40ed-a233-660e49f7e057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Filesystem">
+      <UniqueIdentifier>{57671925-558d-4065-a32e-c5b5041d4199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunc">
+      <UniqueIdentifier>{eef257f6-811f-402d-8916-f67f7ad4a0e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindosVersion">
+      <UniqueIdentifier>{14d917fe-b262-4ab5-ac1d-41317978b972}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="Ntos.h">
+      <Filter>Ntos</Filter>
+    </ClInclude>
+    <ClInclude Include="ldasm.h">
+      <Filter>ldasm</Filter>
+    </ClInclude>
+    <ClInclude Include="KernelReload.h">
+      <Filter>KernelReload</Filter>
+    </ClInclude>
+    <ClInclude Include="Fixrelocation.h">
+      <Filter>Fixrelocation</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>Filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunc.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsVersion.h">
+      <Filter>WindosVersion</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

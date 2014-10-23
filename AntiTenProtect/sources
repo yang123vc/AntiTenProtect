@@ -1,0 +1,16 @@
+TARGETNAME=AntiTenProtect
+#TARGETPATH=$(BASEDIR)\lib
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+INCLUDES=.\
+
+SOURCES=AntiTenProtect.c\
+CommonFunc.c\
+FileSystem.c\
+Fixrelocation.c\
+KernelReload.c\
+ldasm.c\
+Ntos.c\
+WindowsVersion.c
+
