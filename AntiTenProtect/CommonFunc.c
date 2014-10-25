@@ -1,5 +1,9 @@
 #include "CommonFunc.h"
 
+#define SAFE_PROCESS_MAX 9
+char SafeProcessList[][50] = {"svchost.exe","System","smss.exe","csrss.exe",
+	"winlogon.exe","services.exe","lsass.exe","explorer.exe",
+	"taskmgr.exe"};
 //////////////////////////////////////////////////////////////////////////
 __inline ULONG CR4()
 {
@@ -329,4 +333,40 @@ NTSTATUS SafeCopyMemory(PVOID SrcAddr, PVOID DstAddr, ULONG Size)
 		IoFreeMdl(pSrcMdl);
 	}
 	return st;
+}
+/************************************************************************/
+//判断是否是系统进程和调试器进程
+//
+/************************************************************************/
+BOOL IsSystemProcess(PEPROCESS Eprocess)
+{
+	BOOL bRet = FALSE;
+	ULONG i;
+	PCHAR ProcessName = PsGetProcessImageFileName();
+	if (!MmIsAddressValidEx(ProcessName))
+	{
+		return FALSE;
+	}
+	for (i = 0; i < SAFE_PROCESS_MAX; i++)
+	{
+		if (_stricmp(ProcessName,SafeProcessList[i]) == 0)
+		{
+			bRet = TRUE;
+			break;
+		}
+	}
+	return bRet;
+}
+//
+BOOL IsDebuggerProcess(PEPROCESS Eprocess)
+{
+	PCHAR ProcessName = PsGetProcessImageFileName();
+	if (MmIsAddressValidEx(ProcessName))
+	{
+		if (_stricmp(ProcessName,"od.exe") == 0)
+		{
+			return TRUE;
+		}
+	}
+	return FALSE;
 }

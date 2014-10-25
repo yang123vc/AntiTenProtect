@@ -56,20 +56,31 @@
     <ClCompile Include=".\AntiTenProtect.c" />
     <ClCompile Include=".\AntiTenProtect.h" />
     <ClCompile Include="CommonFunc.c" />
+    <ClCompile Include="DbgkObj.c" />
+    <ClCompile Include="Exinit.c" />
     <ClCompile Include="FileSystem.c" />
     <ClCompile Include="Fixrelocation.c" />
+    <ClCompile Include="Ke.c" />
     <ClCompile Include="KernelReload.c" />
     <ClCompile Include="ldasm.c" />
     <ClCompile Include="Ntos.c" />
+    <ClCompile Include="ObMgr.c" />
+    <ClCompile Include="PsProcessThread.c" />
     <ClCompile Include="WindowsVersion.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonFunc.h" />
+    <ClInclude Include="DbgkObj.h" />
+    <ClInclude Include="Exinit.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="Fixrelocation.h" />
+    <ClInclude Include="FuncAddress.h" />
+    <ClInclude Include="Ke.h" />
     <ClInclude Include="KernelReload.h" />
     <ClInclude Include="ldasm.h" />
     <ClInclude Include="Ntos.h" />
+    <ClInclude Include="ObMgr.h" />
+    <ClInclude Include="PsProcessThread.h" />
     <ClInclude Include="struct.h" />
     <ClInclude Include="WindowsVersion.h" />
   </ItemGroup>

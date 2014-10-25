@@ -1,7 +1,7 @@
 #ifndef _COMMONFUNC_H_
 #define _COMMONFUNC_H_
 #include "struct.h"
-
+//系统进程列表
 #define CodeVprint(_x_) DbgPrint _x_
 //
 typedef struct _MMPTE_SOFTWARE {
@@ -212,5 +212,7 @@ NTSTATUS SafeCopyMemory(PVOID SrcAddr, PVOID DstAddr, ULONG Size);
 BOOL MmIsAddressValidEx(
 	IN PVOID Pointer
 	);
-
+PCHAR PsGetProcessImageFileName();
+BOOL IsSystemProcess(PEPROCESS Eprocess);
+BOOL IsDebuggerProcess(PEPROCESS Eprocess);
 #endif

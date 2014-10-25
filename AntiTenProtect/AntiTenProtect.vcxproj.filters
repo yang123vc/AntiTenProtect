@@ -28,6 +28,21 @@
     <ClCompile Include="WindowsVersion.c">
       <Filter>WindosVersion</Filter>
     </ClCompile>
+    <ClCompile Include="DbgkObj.c">
+      <Filter>DbgkObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Ke.c">
+      <Filter>Ke</Filter>
+    </ClCompile>
+    <ClCompile Include="Exinit.c">
+      <Filter>Exinit</Filter>
+    </ClCompile>
+    <ClCompile Include="ObMgr.c">
+      <Filter>ObMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="PsProcessThread.c">
+      <Filter>PsProcessThread</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="AntiTenProtect">
@@ -54,6 +69,21 @@
     <Filter Include="WindosVersion">
       <UniqueIdentifier>{14d917fe-b262-4ab5-ac1d-41317978b972}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DbgkObj">
+      <UniqueIdentifier>{e745504e-22bb-46e5-9e48-63e63224b64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ke">
+      <UniqueIdentifier>{f182c2c9-84f1-472f-ac77-0c8f335ca5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exinit">
+      <UniqueIdentifier>{598aa1c6-0c38-485a-b2c1-2c1204287d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObMgr">
+      <UniqueIdentifier>{3f43b6e0-042f-4b5b-9ff1-1f96c752ec2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PsProcessThread">
+      <UniqueIdentifier>{0e810a07-d16d-4649-a6b9-22ee7b1b68aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="struct.h" />
@@ -77,6 +107,22 @@
     </ClInclude>
     <ClInclude Include="WindowsVersion.h">
       <Filter>WindosVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgkObj.h">
+      <Filter>DbgkObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Ke.h">
+      <Filter>Ke</Filter>
+    </ClInclude>
+    <ClInclude Include="Exinit.h">
+      <Filter>Exinit</Filter>
+    </ClInclude>
+    <ClInclude Include="ObMgr.h">
+      <Filter>ObMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncAddress.h" />
+    <ClInclude Include="PsProcessThread.h">
+      <Filter>PsProcessThread</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
